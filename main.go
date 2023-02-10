@@ -9,6 +9,10 @@ func main() {
 	// Create some rooms
 	client.CreateRoom(map[string]interface{}{
 		"id": "room-1",
+		"categories": map[string]interface{}{
+			"cosiness": 10,
+			"light":    2,
+		},
 	})
 
 	// Add some messages to the rooms
